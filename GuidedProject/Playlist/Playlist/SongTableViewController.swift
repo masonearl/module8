@@ -28,11 +28,11 @@ class SongTableViewController: UITableViewController {
     }
 
     @IBAction func addButtonTapped(sender: AnyObject) {
-        if let title = titleTextField.text, let artist = artistTextField.text {
-        SongController.createSong(title, artist: artist, playlist: playlist)
+        if let title = titleTextField.text, let artist = songTitleView.text, let unwrappedPlaylist = playlist {
+        SongController.createSong(title, artist: artist, playlist: unwrappedPlaylist)
             tableView.reloadData()
             titleTextField.text = ""
-            artistTextField.text = ""
+            songTitleView.text = ""
         
         }
     
@@ -103,4 +103,4 @@ class SongTableViewController: UITableViewController {
     }
     */
 
-}
+

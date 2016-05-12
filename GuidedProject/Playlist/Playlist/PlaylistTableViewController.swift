@@ -11,6 +11,7 @@ import UIKit
 class PlaylistTableViewController: UITableViewController {
     
     
+    @IBOutlet weak var playlistNameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         

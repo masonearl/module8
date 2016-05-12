@@ -72,6 +72,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="playlistNameTextField" destination="wxx-ha-5aN" id="NUa-hs-Wfh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4QS-lu-Rva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
